@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    overflow-x: hidden;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #ba7453, #d1a984);
+    z-index: -1;
+}
+.hero{
+    height: 60%;
+    width: 100%;
+    position: relative;
+    
+}
+.hero img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 72%;
+}
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    color: white;
+    align-items: center;
+}
+#logo{
+    grid-column: 2/3;
+    font-size: 24px;
+}
+.fa-bars{
+    grid-column: 4/5;
+    font-size: 1.5rem;
+    margin-left: -13%;
+}
+section{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.headline{
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    font-size: 78px;
+    transform: translate(-30%, -70%);
+    z-index: 2;
+    color: white;
+    
+}
+.hero::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    
+}
